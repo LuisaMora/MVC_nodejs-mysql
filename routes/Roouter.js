@@ -1,18 +1,19 @@
 const express = require('express');
 const router = express.Router();
 //const controller=require('../controllers/UserControllers')
-const conexion =require('../database/db');
+//const conexion =require('../database/db');
 
 router.get('/',(req,res)=>{
-    conexion.query('SELECT * FROM users',(error,results)=>
+    res.render('home')
+/*     conexion.query('SELECT * FROM users',(error,results)=>
     {
+        throw error;
         if(error){
-            throw error;
         }
         else{
             res.send(results);
         }
-    })
+    }) */
 });
 
 
