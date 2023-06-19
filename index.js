@@ -10,15 +10,7 @@ const userRoute = require('./routes/Roouter');
 //app.set('views',__dirname+'/views');
 
 app.use('/',userRoute);
-/*
-app.get('/', function(req, res) {
-   res.render('home');
- });
 
- app.get('/about', function(req, res) {
-   res.render('about');
- });
-*/
  app.listen(3000,()=>{
     console.log("hoaaaa port 3000")
  });

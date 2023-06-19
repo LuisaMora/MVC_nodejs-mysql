@@ -15,6 +15,9 @@ router.get('/',(req,res)=>{
         }
     }) */
 });
+router.get('/registro',(req,res)=>{
+    res.render('registro');
+})
 
 
 module.exports=router;
